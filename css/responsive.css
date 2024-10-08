@@ -1,0 +1,225 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 60%;
+  }
+
+  .gs_top {
+    padding: 0px 2rem;
+    display: block;
+  }
+
+  .gs_top_left {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .gs_top_left_radio {
+    padding: 3.2rem 1rem;
+  }
+
+  .gs_top_right_score {
+    width: 16rem;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .gs_top_point {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .gs_bottom {
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  .main_wrapper {
+    padding: 5rem 0rem;
+  }
+
+  .sheading_wrapper {
+    padding: 0rem 2rem;
+  }
+
+  .sheading img {
+    right: -1rem;
+  }
+
+  .shade_input {
+    flex-direction: column;
+    padding: 0px 2rem;
+  }
+
+  .gs_next {
+    padding-left: 0;
+  }
+
+  .mtop {
+    margin-top: 2rem;
+  }
+
+  .gs_next {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shade_input_left {
+    padding: 4rem 2rem;
+  }
+
+  .congra {
+    padding: 0px 2rem;
+  }
+
+  .p3scrore {
+    flex-direction: column;
+  }
+
+  .p3scrore_item {
+    height: inherit;
+  }
+
+  .item_two {
+    height: 18rem;
+    width: 16rem;
+  }
+
+  .item_two span {
+    line-height: auto;
+  }
+
+  .item_three img {
+    width: 18rem;
+    height: 0.2rem;
+    display: block;
+    margin: auto;
+  }
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+
+  .gs_top {
+    padding: 0px 2rem;
+    display: block;
+  }
+
+  .gs_top_left {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .gs_top_left_radio {
+    padding: 3.2rem 1rem;
+  }
+
+  .gs_top_right_score {
+    width: 16rem;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .gs_top_point {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .gs_bottom {
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  .main_wrapper {
+    padding: 5rem 0rem;
+  }
+
+  .sheading_wrapper {
+    padding: 0rem 2rem;
+  }
+
+  .sheading img {
+    right: -1rem;
+  }
+
+  .shade_input {
+    flex-direction: column;
+    padding: 0px 2rem;
+  }
+
+  .gs_next {
+    padding-left: 0;
+  }
+
+  .mtop {
+    margin-top: 2rem;
+  }
+
+  .gs_next {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shade_input_left {
+    padding: 4rem 2rem;
+  }
+
+  .congra {
+    padding: 0px 2rem;
+  }
+
+  .p3scrore {
+    flex-direction: column;
+  }
+
+  .p3scrore_item {
+    height: inherit;
+  }
+
+  .item_two {
+    height: 18rem;
+    width: 16rem;
+  }
+
+  .item_two span {
+    line-height: auto;
+  }
+
+  .item_three img {
+    width: 18rem;
+    height: 0.2rem;
+    display: block;
+    margin: auto;
+  }
+}

@@ -1,0 +1,613 @@
+body {
+  font-family: "Source Sans Pro";
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: #fff;
+  color: #333333;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+::selection {
+  color: white;
+  background: #ff7675;
+}
+
+::-webkit-selection {
+  color: white;
+  background: #ff7675;
+}
+
+::-moz-selection {
+  color: white;
+  background: #ff7675;
+}
+
+html {
+  font-size: 1.016vw;
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 0.85vw;
+  }
+}
+
+.main_wrapper {
+  min-height: 100vh;
+  background-image: url(../img/body_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gs_top {
+  padding-left: 6rem;
+  display: grid;
+  grid-template-columns: calc(100% - 15rem) 12rem;
+  column-gap: 3rem;
+  padding-right: 2rem;
+}
+
+.gs_top_left_one {
+  display: block;
+  width: 8.5rem;
+  height: 6.1rem;
+  border: 1.5px solid #000;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gs_top_left_one span {
+  color: #296b48;
+  font-family: "Super Comic";
+  font-size: 2.4rem;
+}
+
+.gs_top_left_two h2 {
+  color: #000;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  background-color: #fff;
+  border: 1.5px solid #000;
+  padding: 1.4rem 4rem;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  text-align: center;
+}
+
+.gs_top_left {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.gs_top_left_radio {
+  border-radius: 0px 0px 1.5rem 1.5rem;
+  border: 1.5px solid #000;
+  background: rgba(0, 0, 0, 0.12);
+  margin-top: 1rem;
+  padding: 3.2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 2.4rem;
+}
+
+.gs_top_left_radio .labl {
+  display: block;
+  width: 16rem;
+}
+.gs_top_left_radio .labl > input {
+  visibility: hidden;
+  position: absolute;
+}
+.gs_top_left_radio .labl > input + div.text {
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #000;
+  font-size: 2.6rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 1.5rem;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.gs_top_left_radio .labl > input:checked + div.text {
+  border: 2px solid #296b48;
+  color: #296b48;
+}
+
+.oval {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 1px;
+}
+
+.oval span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #296b48;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.gs_top_left_radio .labl > input:checked + div .oval span {
+  opacity: 1;
+}
+
+.gs_top_left_two {
+  width: 100%;
+}
+
+.gs_top_right_score {
+  width: 12rem;
+  border-radius: 1rem;
+  border: 1.5px solid #28945a;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  padding: 0.8rem;
+}
+
+.gs_top_right_score h3 {
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  font-family: "Super Comic";
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.percent_bar {
+  position: relative;
+}
+
+.percent_bar img {
+  display: block;
+  width: 100%;
+}
+
+.percent_bar span {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Super Comic";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gs_top_right_score p {
+  color: #000;
+  text-align: center;
+  font-family: "Super Comic";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+
+.gs_top_point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.gs_top_point span {
+  color: #fff;
+  font-family: "Super Comic";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  border-radius: 35px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.8rem;
+}
+
+.gs_top_point img {
+  display: inline-block;
+  width: 2.3rem;
+}
+
+.gs_bottom {
+  padding: 0px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.gs_btm_left a.help,
+.gs_btm_left a.login {
+  display: inline-block;
+}
+
+.gs_btm_left a.help img {
+  display: inline-block;
+  width: 8rem;
+}
+
+.gs_btm_left a.login {
+  position: relative;
+}
+
+.gs_btm_left a.login img {
+  display: inline-block;
+  width: 15rem;
+}
+
+.gs_btm_left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.gs_btm_left a.login span {
+  color: #fff;
+  font-family: "Super Comic";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 42%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gs_btm_middle a {
+  display: inline-block;
+  position: relative;
+}
+
+.gs_btm_middle a img {
+  display: inline-block;
+  width: 12.6rem;
+}
+
+.gs_btm_middle a span {
+  color: #296b48;
+  font-family: "Super Comic";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.gs_btn_right .number_link > img {
+  display: inline-block;
+  width: 15rem;
+}
+
+.number_icon {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number_icon img {
+  display: inline-block;
+  width: 2.2rem;
+}
+
+.number_icon span {
+  display: inline-block;
+  color: #fff;
+  font-family: "Super Comic";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 35px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.8rem;
+}
+
+.number_link {
+  position: relative;
+}
+
+.gs_btn_right a.pot {
+  display: inline-block;
+}
+
+.gs_btn_right a.pot img {
+  display: inline-block;
+  width: 8rem;
+}
+
+.gs_bottom a {
+  transition: all 0.2s ease;
+}
+
+.gs_bottom a:hover {
+  opacity: 0.7;
+}
+
+/* ===================================
+        2nd page start
+=================================== */
+
+.sheading_wrapper {
+  padding: 0px 15rem;
+}
+
+.sheading {
+  position: relative;
+}
+
+.sheading h2 {
+  color: #000;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  background-color: #fff;
+  border: 1.5px solid #000;
+  padding: 1.4rem 4rem;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  text-align: center;
+}
+
+.sheading img {
+  display: inline-block;
+  width: 5.5rem;
+  position: absolute;
+  top: -2.6rem;
+  right: -2rem;
+}
+
+.shade_input {
+  padding-left: 15rem;
+  display: flex;
+  padding-right: 4rem;
+}
+
+.shade_input_left {
+  border-radius: 0px 0px 1.5rem 1.5rem;
+  border: 1.5px solid #000;
+  background: rgba(0, 0, 0, 0.12);
+  margin-top: 1rem;
+  padding: 4rem 5rem;
+  width: 100%;
+}
+
+.shin_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shin_input label {
+  display: block;
+  color: #000;
+  text-align: right;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 10rem;
+}
+
+.shin_input input {
+  display: block;
+  width: 24rem;
+  border: 0;
+  outline: none;
+  border-bottom: 0.2rem solid #666;
+  width: 24rem;
+  background-color: transparent;
+  outline: none;
+  margin-left: 3rem;
+  text-align: center;
+  color: #000;
+  font-family: "Super Comic";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.7rem 0rem;
+}
+
+.shin_input input::placeholder {
+  opacity: 1;
+}
+
+.shin_input_mt {
+  margin-top: 4rem;
+}
+
+.gs_next {
+  width: 11rem;
+  padding-left: 2.1rem;
+}
+
+.mtop {
+  margin-top: 1rem;
+}
+
+.login_text {
+  position: absolute;
+  left: 46%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login_text p.user {
+  color: #fff;
+  font-family: "Super Comic";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.login_text p.label {
+  color: #000;
+  font-family: "Super Comic";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gs_btm_middle a.skip img {
+  width: 11.5rem;
+}
+
+.gs_btm_middle a.skip span {
+  color: #000 !important;
+}
+
+.gs_btn_gap {
+  gap: 1.2rem !important;
+  display: flex;
+  align-items: center;
+}
+
+/* ===================================
+        3rd page start
+=================================== */
+.congra {
+  padding: 0px 15rem;
+}
+
+.congra h3 {
+  color: #000;
+  font-family: "Super Comic";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 1.5rem;
+  border: 1.5px solid #000;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 2rem 4rem;
+}
+
+.item_two {
+  border-radius: 1rem;
+  border: 1.5px solid #28945a;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.8rem;
+  width: 12rem;
+}
+
+.item_two p {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Super Comic";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.item_two img {
+  display: block;
+  width: 5.5rem;
+  margin: auto;
+}
+
+.item_two span {
+  color: #000;
+  display: block;
+  font-family: "Super Comic";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  line-height: 1;
+}
+
+.p3scrore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  padding: 4rem 0;
+}
+
+.p3scrore_item {
+  height: 16.3rem;
+}
+
+.item_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item_three img {
+  display: block;
+  width: 0.2rem;
+  height: 16.3rem;
+}
+
+.biglogin img {
+  width: 36.8rem !important;
+}
+
+.biglogin {
+  margin-top: -1.2rem;
+}
